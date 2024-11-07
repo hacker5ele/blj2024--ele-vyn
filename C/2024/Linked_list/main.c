@@ -1,18 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "linkedlist.h"
 
-typedef struct Node {
-    int data;
-    struct Node *next;
-}TNode;
 
-void printList(TNode *p_head) {
-    TNode *p_cursor = p_head;
-    while (p_cursor != NULL) {  // Loop until reaching the end of the list
-        printf("%d\n", p_cursor->data);  // Print the data of the current node
-        p_cursor = p_cursor->next;       // Move to the next node
-    }
-}
+
 
 int main(void) {
 
@@ -35,6 +26,7 @@ int main(void) {
 
     printList(p_head);
 
+    TNode *demo = createNode(56);
 
 
     printf("%d\n", p_head->data);

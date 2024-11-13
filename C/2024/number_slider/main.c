@@ -92,10 +92,6 @@ int main(void) {
         }
 
 
-            // TODO: Implement the rules for the sliding puzzle. In other words,
-            // swap neighboured values (horizontally or vertically) in the 2D array
-            // based on user input, but only if the move is legal (bounds checking).
-
         } while (input != 0);
 
     return 0;

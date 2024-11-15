@@ -13,10 +13,18 @@ public class Person {
 
     }
 
+    public Person(String name, String favoriteColor, int age, String bestfriend, String characteristics) {
+        this.name = name;
+        this.favoriteColor = favoriteColor;
+        this.age = age;
+        this.bestfriend = bestfriend;
+        this.characteristics = characteristics;
+    }
+
     public void presentYourself(){
-        System.out.println("Ich bin" +  name +
-                "meine Lieblingsfarbe ist " + favoriteColor + ". Ich bin " + age
-        + ". Mein beste/r Kolleg/in ist " + bestfriend + "Meine Eigenschaften sind"
+        System.out.println("Ich bin " +  name +
+                " meine Lieblingsfarbe ist " + favoriteColor + ". Ich bin " + age
+        + ". Mein beste/r Kolleg/in ist " + bestfriend + " Meine Eigenschaften sind "
         + characteristics);
     }
 
@@ -30,6 +38,10 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
     public void setAge(int age) {
         this.age = age;
